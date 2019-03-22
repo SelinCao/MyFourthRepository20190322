@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!--
+/*
+ * Copyright 2017 ZNV
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<indexer table="FSS_DEVELOP_410:FSS_HISTORY_V1_1_3_20170727" read-row="dynamic_es" mapper="com.ngdata.hbaseindexer.parse.HistoryResultToEsMapper" es-id-adding="com.ngdata.hbaseindexer.indexer.HistoryIdAddingEsUpdateWriter">
+  <field name="uuid" value="ATTR:UUID"/>
+  <field name="person_id" value="ATTR:PERSON_ID"/>
+  <field name="person_name" value="ATTR:PERSON_NAME"/>
+  <field name="camera_id" value="ATTR:CAMERA_ID"/>
+  <field name="camera_name" value="ATTR:CAMERA_NAME"/>
+  <field name="enter_time" value="ATTR:ENTER_TIME" type="Date"/>
+  <field name="leave_time" value="ATTR:LEAVE_TIME" type="Date"/>
+  <field name="duration_time" value="ATTR:DURATION_TIME" type="long"/>
+  <field name="gps_xy" value="ATTR:GPSX" type="float"/>
+  <field name="office_id" value="ATTR:OFFICE_ID"/>
+  <field name="office_name" value="ATTR:OFFICE_NAME"/>
+  <field name="op_time" value="ATTR:OP_TIME" type="Date"/>
+  <field name="frame_index" value="ATTR:FRAME_INDEX" type="int"/>
+  <field name="task_idx" value="ATTR:TASK_IDX"/>
+  <field name="track_idx" value="ATTR:TRACK_IDX"/>
+  <field name="rt_feature" value="FEATURE:RT_FEATURE" type="byte[]"/>
+  <!--<field name="rt_feature_q7" value="FEATURE:RT_FEATURE" type="byte[]"/>-->
+  <!--<field name="rt_feature_q7_31" value="FEATURE:RT_FEATURE" type="byte[]"/>-->
+  <!--<field name="rt_feature_q7_gr" value="FEATURE:RT_FEATURE" type="byte[]"/>-->
+  <field name="img_width" value="ATTR:IMG_WIDTH" type="int"/>
+  <field name="img_height" value="ATTR:IMG_HEIGHT" type="int"/>
+  <field name="img_url" value="ATTR:IMG_URL"/>
+  <field name="quality_score" value="ATTR:QUALITY_SCORE" type="phoenix_signed_float"/>
+  <field name="left_pos" value="ATTR:LEFT_POS" type="int"/>
+  <field name="top" value="ATTR:TOP" type="int"/>
+  <field name="right_pos" value="ATTR:RIGHT_POS" type="int"/>
+  <field name="bottom" value="ATTR:BOTTOM" type="int"/>
+  <field name="yaw" value="ATTR:YAW" type="phoenix_signed_float"/>
+  <field name="pitch" value="ATTR:PITCH" type="phoenix_signed_float" />
+  <field name="roll" value="ATTR:ROLL" type="phoenix_signed_float"/>
+  <field name="similarity" value="ATTR:SIMILARITY" type="float"/>
+  <field name="birth" value="ATTR:BIRTH"/>
+  <field name="gender" value="ATTR:GENDER" type="int"/>
+  <field name="glass" value="ATTR:GLASS" type="int"/>
+  <field name="mask" value="ATTR:MASK" type="int"/>
+  <field name="race" value="ATTR:RACE" type="int"/>
+  <field name="beard" value="ATTR:BEARD" type="int"/>
+  <field name="emotion" value="ATTR:EMOTION" type="int"/>
+  <field name="eye_open" value="ATTR:EYE_OPEN" type="int"/>
+  <field name="mouth_open" value="ATTR:MOUTH_OPEN" type="int"/>
+  <field name="big_picture_uuid" value="ATTR:BIG_PICTURE_UUID"/> 
+  <field name="control_event_id" value="ATTR:CONTROL_EVENT_ID"/>
+  <field name="camera_type" value="ATTR:CAMERA_TYPE" type="int"/>
+  <field name="lib_id" value="ATTR:LIB_ID" type="int"/>
+  <field name="age" value="ATTR:AGE" type="int"/>
+  <field name="is_alarm" value="ATTR:IS_ALARM"/>
+  
+</indexer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
